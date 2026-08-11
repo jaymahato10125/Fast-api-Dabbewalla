@@ -28,8 +28,8 @@ class OrderCreate(SQLModel):
     item: str
 
 # Schema for updating an order's status
-class OrderUpdateStatus(SQLModel):
-    status: OrderStatus[OrderStatus] = None
+class OrderUpdate(SQLModel):
+    status: OrderStatus = None
     delivery_address: Optional[str] = None
 
 # Schema for reading an order (response model)
